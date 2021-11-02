@@ -8,18 +8,21 @@ public class main {
 		// TODO Auto-generated method stub
 		Scanner scanner;
 		scanner = new Scanner(System.in);
-		String s;
+		String string;
 		do {
-			s = scanner.nextLine();
-			if(s.equals("")) {
+			string = scanner.nextLine();
+			if(string.equals("")) {
 				continue;
 			}
-			String[] pars = s.split(" ");
-			if(pars.length != 3) {
+			String[] parts = string.split(" ");
+			if(parts.length != 3) {
+				if(string.equals("kraj"))
+					continue;
+				System.out.println("Pogresan format naredbe");
 				continue;
 			} 
 				
-		}while(!s.equals("kraj"));
+		}while(!string.equals("kraj"));
 
 	}
 

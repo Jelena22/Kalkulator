@@ -26,8 +26,8 @@ public class main {
 			if(parts[1].equals("+")) {
 				addition(x, y);
 			}
-			if(parts[1].equals("-")) {
-				substraction(x, y);
+			if(parts[1].equals("*")) {
+				multiplication(x, y);
 			}
 		}while(!string.equals("kraj"));
 
@@ -38,6 +38,9 @@ public class main {
 	}
 	public static void substraction(int x, int y) {
 		System.out.println(x-y);
+	}
+	public static void multiplication(int x, int y) {
+		System.out.println(x*y);
 	}
 
 }

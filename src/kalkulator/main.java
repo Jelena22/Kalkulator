@@ -29,6 +29,10 @@ public class main {
 			if(parts[1].equals("-")) {
 				substraction(x, y);
 			}
+			if(parts[1].equals("*")) {
+				//TODO
+			}
+
 		}while(!string.equals("kraj"));
 
 	}

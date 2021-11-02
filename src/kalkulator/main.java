@@ -26,11 +26,18 @@ public class main {
 			if(parts[1].equals("+")) {
 				addition(x, y);
 			}
+			if(parts[1].equals("-")) {
+				substraction(x, y);
+			}
 		}while(!string.equals("kraj"));
 
 	}
+
 	public static void addition(int x, int y) {
 		System.out.println(x+y);
+	}
+	public static void substraction(int x, int y) {
+		System.out.println(x-y);
 	}
 
 }
